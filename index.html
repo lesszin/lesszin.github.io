@@ -38,10 +38,31 @@
       line-height: 1.6;
       font-size: 1.1rem;
     }
+    .nav-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;    
+      justify-content: center; 
+    } 
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.3s; 
+    }
+    .nav-link:hover {
+      color: #3498db;
+    }
   </style>
 </head>
 <body>
   <header>
+    <nav class="nav-container">
+      <a href="PropostaDeTrabalho.pdf" class="nav-link" target="_blank">Proposta</a>
+    </nav>
   </header>
   <h1>MAC0499 - Trabalho de Formatura Supervisionado</h1>
   <p class="subtitle">Aluno: Lucas Escobar</p>
