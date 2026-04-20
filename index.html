@@ -11,6 +11,8 @@
       top: 0;
       left: 0;
       z-index: 1000;
+      padding: 0 20px; 
+      box-sizing: border-box;
     }
     body {
       margin-top: 120px; 
@@ -41,27 +43,48 @@
       font-size: 1.4rem;
     }
     .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
       height: 100%;
       display: flex;
       align-items: center;    
-      justify-content: center; 
-    } 
+      justify-content: space-between; 
+    }
+    .nav-spacer {
+      width: 150px;
+    }
     .nav-link {
       color: white;
       text-decoration: underline;
       font-weight: 700;
       font-size: 1.8rem;
-      transition: opacity 0.3s; 
+      transition: opacity 0.3s;
+      flex-grow: 1; 
+      text-align: center;
     }
     .nav-link:hover {
       opacity: 0.7;
+    }
+    .nav-logo-container {
+      width: 150px; 
+      display: flex;
+      justify-content: flex-end; 
+    }
+    .nav-logo {
+      max-height: 60px;
+      width: auto;     
+      display: block;
     }
   </style>
 </head>
 <body>
   <header>
     <nav class="nav-container">
+      <div class="nav-spacer"></div>
       <a href="PropostaDeTrabalho.pdf" class="nav-link" target="_blank">Proposta</a>
+      <div class="nav-logo-container">
+        <img src="Cachorro.jfif" alt="logo" class="nav-logo">
+      </div>
     </nav>
   </header>
   <h1>MAC0499 - Trabalho de Formatura Supervisionado</h1>
